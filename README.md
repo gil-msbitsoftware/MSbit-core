@@ -1,5 +1,7 @@
 # MSbitCore
 
+Base scaffolding for a MSbit-core project [includes Angular, RxJS]
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.3.2.
 
 ## Development server
