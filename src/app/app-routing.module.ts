@@ -13,7 +13,8 @@ const routes: Routes = [
     {
         path: 'b',
         component: ExampleBComponent
-    }
+    },
+    {path: '**', redirectTo: 'a', pathMatch: 'full'},
     /*
     { path: '', redirectTo: 'bundle', pathMatch: 'full' },
   { path: 'bundle', component: BundleContainer, canActivate: [TokenGuard] },
