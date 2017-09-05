@@ -3,6 +3,7 @@ import {RouterModule, Routes} from '@angular/router';
 import {ExampleAComponent} from './example-a/components/example-a/example-a.component';
 import {ExampleBComponent} from './example-a/components/example-b/example-b.component';
 import {ExampleGuard} from './core/services/example.guard';
+import {Resolver} from './core/services/resolver';
 
 const routes: Routes = [
 
@@ -10,7 +11,10 @@ const routes: Routes = [
     {path: '', redirectTo: '/a', pathMatch: 'full'},
     {
         path: 'a',
-        component: ExampleAComponent
+        component: ExampleAComponent,
+        resolve: {
+            exampleValueFromResolve: Resolver
+        }
     },
     {
         path: 'b',
